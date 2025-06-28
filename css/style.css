@@ -211,3 +211,11 @@ html, body {
 .education-section {
   background-color: white;
 }
+
+/*projects section*/
+
+.projects-title-span {
+  color: rgb(127, 0, 255);
+  margin-left: 10px;
+}
+

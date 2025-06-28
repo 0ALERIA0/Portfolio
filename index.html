@@ -10,6 +10,7 @@
 <body>
     
     <div class="container-xxl p-0 content">
+        
         <div id="particles-js"></div>
             <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -46,7 +47,7 @@
             <div class="hero-left">
                 <h1>Hi There,<br> i'm Darrelle <span>Talisic</span></h1>
                 <p><strong>I Am Into</strong> <span class="highlight display-6" id="text"></span></p>
-                <a href="#about-me"><button class="btn btn-primary">About me<i class="fa-solid fa-arrow-down fa-lg mx-2"></i></button></a>
+                <a href="#about-me" class="btn-about"><button class="btn">About me<i class="fa-solid fa-arrow-down fa-lg mx-2"></i></button></a>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
                     <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
@@ -57,13 +58,41 @@
             </div>
         </div>
         <section id="about-me" class="about-me-section">
-            <div class="container text-center row p-2">
-                <h2 class="display"><i class="fa-solid fa-user fa-lg mx-1"></i><strong>About <span class="me-span">Me</span></strong></h2>
-                <div class="picture-me col-md-4 col-sm-12 text-center">
-                    <img src="asset/my-picture.jpg" alt="About Me" class="about-img">
+        <div class="container text-center">
+            <div class="row p-2">
+                <div class="col-12">
+                    <h2 class="display">
+                    <i class="fa-solid fa-user fa-2xs mx-1"></i><strong>About <span class="me-span">Me</span></strong>
+                    </h2>
                 </div>
-                <div class="about-me-message col-md-8 col-sm-12">
-                    <p>I am Darrelle </p>
+                <div class="picture-me col-md-6 col-sm-12 text-center tilt-container">
+                    <img src="asset/my-picture.jpg" alt="About Me" class="about-img tilt-img">
+                </div>
+                <div class="about-me-message col-md-6 col-sm-12 justify-content">
+                    <h4>Darrelle Talisic</h4>
+                    <p class="lead">Full Stack Developer</p>
+                    <p>I am a Full-Stack Developer based in Dasmariñas Cavite, Philippines. I am a 4th year student taking Information System course at Adamson University. I am very passionate about improving my coding skills and developing softwares and websites. </p>
+                    <p class="email">Email: <span>darrelletalisic@gmail.com</span></p>
+                    <p class="address">Address: <span>Dasmariñas Cavite Philippines</span></p>
+                    <button class="button-liquid liquid">
+                        <span class="my-resume">My Resume</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills-section">
+            <div class="container text-center p-5 bg-primary">
+                <h2 class="display-6"><i class="fa-solid fa-desktop" style="color: rgb(127, 0, 255);"></i>Skills</h2>
+                <div class="skills-grid row">
+                    <div class="skills-box">
+                        <div class="icon-skills">
+                            <i class="fa-brands fa-js fa-2xl" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="name-skills">
+                            javascript
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -64,3 +64,24 @@ function deleteWriter() {
 
 // Initialize the animation
 typeWriter();
+
+ const container = document.querySelector('.tilt-container');
+  const image = document.querySelector('.tilt-img');
+
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; // x position within the element
+    const y = e.clientY - rect.top;  // y position within the element
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const rotateX = ((y - centerY) / centerY) * 15; // 10 deg max
+    const rotateY = ((x - centerX) / centerX) * -15;
+
+    image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  container.addEventListener('mouseleave', () => {
+    image.style.transform = `rotateX(0deg) rotateY(0deg)`;
+  });

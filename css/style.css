@@ -3,7 +3,7 @@ html, body {
       padding: 0;
       height: 100%;
     }
-
+    
     #particles-js {
       position: fixed;
       top: 0;
@@ -51,11 +51,10 @@ html, body {
     }
 
     .btn-about {
-      margin-top: 20px;
-      background-color: #4f46e5;
+      background-color: rgb(127, 0, 255);
       color: white;
-      padding: 12px 30px;
-      border-radius: 30px;
+      padding: 10px;
+      border-radius: 10px;
     }
 
     .btn-about:hover {
@@ -81,7 +80,6 @@ html, body {
     .avatar {
       width: 400px;
       height: 400px;
-      background-color: #facc15;
       border-radius: 50%;
       overflow: hidden;
       display: flex;
@@ -107,7 +105,7 @@ html, body {
     /*about me section*/
 
     .about-me-section {
-      background-color: red;
+      background-color: white;
     }
 
     .me-span{
@@ -120,4 +118,68 @@ html, body {
       height: auto;
       display: block;
       margin: auto; /* centers the image */
+      border-radius: 20px;
     }
+
+    .tilt-container {
+      width: 300px;
+      height: 300px;
+      perspective: 1000px; /* Needed for 3D effect */
+      margin: 50px auto;
+    }
+
+    .tilt-img {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      filter: grayscale(100%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+      transform: scale(1);
+    }
+
+    .tilt-img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    .email, .address {
+      color: black;
+      font-weight: bold;
+    }
+
+    .about-me-message span {
+      color: rgb(0, 0, 0);
+    }
+
+.button-liquid {
+  position: relative;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: none;
+  border: 2px solid rgb(127, 0, 255);
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.liquid {
+  background: linear-gradient(rgb(127, 0, 255) 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.2em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.liquid:hover {
+  --p: 100%;
+  --t: 0.3s;
+  color: #ffffff;
+}
+
+.my-resume {
+  color: black;
+}

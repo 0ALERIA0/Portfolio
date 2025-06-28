@@ -11,7 +11,6 @@
     
     <div class="container-xxl p-0 content">
         <div id="particles-js"></div>
-        <section id="nav-section">
             <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -22,19 +21,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active-link">
-                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                    <li class="nav-item">
+                    <a class="nav-link"href="#profile">Home</a>
                     </li>
-                    <li class="nav-item link-nav-hover">
-                    <a class="nav-link" href="about.html">About</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About</a>
                     </li>
-                    <li class="nav-item link-nav-hover">
+                    <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                     </li>
-                    <li class="nav-item link-nav-hover">
+                    <li class="nav-item">
                     <a class="nav-link" href="careers.html">Careers</a>
                     </li>
-                    <li class="nav-item link-nav-hover">
+                    <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
@@ -43,24 +42,31 @@
             </nav>
             <div>
             </div>
-        </section>
-        <section class="hero-section">
+        <div class="hero-section" id="profile">
             <div class="hero-left">
                 <h1>Hi There,<br> i'm Darrelle <span>Talisic</span></h1>
                 <p><strong>I Am Into</strong> <span class="highlight display-6" id="text"></span></p>
-                <a href="#about" class="btn btn-about">
-                    About Me <i class="fas fa-arrow-down ms-2"></i>
-                </a>
+                <a href="#about-me"><button class="btn btn-primary">About me<i class="fa-solid fa-arrow-down fa-lg mx-2"></i></button></a>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
                     <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
                 </div>
             </div>
-
-        <div class="avatar">
-        <img src="asset/my-picture.jpg" alt="Avatar">
-    </div>
-  </section>
+            <div class="avatar">
+                <img src="asset/my-picture.jpg" alt="Avatar">
+            </div>
+        </div>
+        <section id="about-me" class="about-me-section">
+            <div class="container text-center row p-2">
+                <h2 class="display"><i class="fa-solid fa-user fa-lg mx-1"></i><strong>About <span class="me-span">Me</span></strong></h2>
+                <div class="picture-me col-md-4 col-sm-12 text-center">
+                    <img src="asset/my-picture.jpg" alt="About Me" class="about-img">
+                </div>
+                <div class="about-me-message col-md-8 col-sm-12">
+                    <p>I am Darrelle </p>
+                </div>
+            </div>
+        </section>
     </div>
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>

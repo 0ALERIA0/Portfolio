@@ -214,12 +214,93 @@ html, body {
 
 /*projects section*/
 
-.projects-title-span {
-  color: rgb(127, 0, 255);
-  margin-left: 10px;
+.works-section {
+  background-color: rgb(85, 85, 85);
 }
 
-.works-section {
-  background-color: white;
-  padding: 20px;
+.projects-title {
+  color: white;
 }
+
+.projects-title span {
+  color: rgb(186, 127, 245);
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-card .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-title {
+  background-color: #ffd500;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* footer */
+
+.footer {
+      background-color: #03002e;
+      color: #fff;
+      padding: 50px 20px;
+    }
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .footer i {
+      color: orange;
+      margin-right: 10px;
+    }
+    .social-icons-footer a {
+      color: #000;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      line-height: 20px;
+    }
+    .social-icons-footer a:hover {
+      background-color: #f1c40f;
+    }
+
+    .created-by {
+      background-color: white;
+    }
